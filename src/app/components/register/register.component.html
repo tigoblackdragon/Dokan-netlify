@@ -40,7 +40,11 @@
       <p class="alert alert bg-main text-light mt-2 m-0 w-50 mt-1">
         Email is required
       </p>
+<<<<<<< HEAD
       } @else if (registerForm.get('email')?.getError('email')) {
+=======
+      } @else if (registerForm.get('email')?.getError('pattern')) {
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       <p class="alert alert bg-main text-light mt-2 m-0 w-50">
         Enter a valid Email
       </p>
@@ -74,7 +78,11 @@
         class="form-control"
         formControlName="password"
         placeholder="Password"
+<<<<<<< HEAD
         type="password"
+=======
+        type="text"
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       />
       @if
       (registerForm.get('password')?.errors&&(registerForm.get('password')?.touched||registerForm.get('password')?.dirty))
@@ -84,6 +92,7 @@
       </p>
       } @else if (registerForm.get('password')?.getError('pattern')) {
       <p class="alert alert bg-main text-light mt-2 m-0 w-50">
+<<<<<<< HEAD
         Enter a valid password:
         <span
           ><ul>
@@ -95,6 +104,10 @@
         >
       </p>
 
+=======
+        Enter a valid password
+      </p>
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       } }
     </div>
     <div class="my-2">
@@ -104,7 +117,11 @@
         class="form-control"
         formControlName="rePassword"
         placeholder="RePassword"
+<<<<<<< HEAD
         type="password"
+=======
+        type="text"
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       />
       @if
       ((registerForm.get('rePassword')?.touched||registerForm.get('rePassword')?.dirty))
@@ -126,6 +143,7 @@
       Register @if(isLoading){<span><i class="fas fa-spin fa-spinner"></i></span
       >}
     </button>
+<<<<<<< HEAD
 
     <div
       class="d-flex d-flex flex-row justify-content-center align-items-center"
@@ -140,5 +158,22 @@
       </p>
       }
     </div>
+=======
+    
+    <div class="d-flex d-flex flex-row justify-content-center align-items-center">
+        @if(msgError&&!msgSuccess){ <p
+        class="alert bg-main text-light mt-2 m-0 w-50 text-center "
+      >
+        {{ msgError }}
+      </p>}
+      @if(msgSuccess){ <p
+        class="alert bg-success text-light mt-2 m-0 w-50 text-center "
+>
+        {{ msgSuccess }}
+      </p>}
+    </div>
+
+    
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
   </form>
 </section>

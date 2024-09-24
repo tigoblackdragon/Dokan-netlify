@@ -26,10 +26,16 @@ export class OrdersService {
 );  // replace with actual API endpoint
   }
 
+<<<<<<< HEAD
   getAllOrders():Observable<any> {
     return this._HttpClient.get(`${environment.baseUrl}api/v1/orders/`)}
 
     getUserOrders(id:string):Observable<any> {
       return this._HttpClient.get(`${environment.baseUrl}api/v1/orders/user/${id}`)
   }
+=======
+  getAllOrders(idCart:string):Observable<any> {
+    return this._HttpClient.get(`${environment.baseUrl}api/v1/orders/user/${idCart}`)
+}
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
 }

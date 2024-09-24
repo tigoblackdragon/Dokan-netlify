@@ -10,8 +10,11 @@ import { environment } from '../environments/envirnoment';
 export class CartService {
 
   cartNumber:BehaviorSubject<number>=new BehaviorSubject(0);
+<<<<<<< HEAD
   cartOrders:BehaviorSubject<number>=new BehaviorSubject(0);
   adminOrders:BehaviorSubject<number>=new BehaviorSubject(0);
+=======
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
   private data: string = ''; // Data stored here
   public cartId: BehaviorSubject<string> = new BehaviorSubject<string>('');
 

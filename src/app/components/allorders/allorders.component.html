@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <section class="bg-main-light shadow p-2  rounded-4 p-3 margin-top-130 ms-5 me-5 mb-5">
+=======
+<section class="bg-main-light shadow p-2  rounded-4 p-3 margin-top-130 ms-5 me-5">
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       <h2 class="text-main fs-1 text-center">All Orders</h2>  
     @for (order of ordersDetails.data; track order.id){
         <div class="text-main"><h2 class="mt-3">Order Id:{{order.id}}</h2>
@@ -13,7 +17,11 @@
         <h5>Delivered:{{order.isDelivered}}</h5>
         <h5>Paid:{{order.isPaid}}</h5>
         <h5>Paid By:{{order.paymentMethodType}}</h5>
+<<<<<<< HEAD
         <h5>Price:{{order.totalOrderPrice| currency : "GBP"}}</h5>
+=======
+        <h5>Price:{{order.totalOrderPrice}}</h5>
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
       </div>
       <div class="col-md-4 text-main">
         <h3>Deliver details</h3>

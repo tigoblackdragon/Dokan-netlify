@@ -16,7 +16,10 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
 import { AllordersComponent } from './components/allorders/allorders.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { WhishlistComponent } from './components/whishlist/whishlist.component';
+<<<<<<< HEAD
 import { UserOrderComponent } from './components/user-order/user-order.component';
+=======
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
 
 export const routes: Routes = [
   {
@@ -27,7 +30,11 @@ export const routes: Routes = [
       { path: 'login', component: LoginComponent,title:'login' },
       { path: 'register', component: RegisterComponent,title:'Register' },
       { path: 'forgotPassword', component: ForgotpassComponent,title:'Forgot The Password' },
+<<<<<<< HEAD
     ]
+=======
+    ],
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
   },
   {
     path: '',
@@ -42,10 +49,16 @@ export const routes: Routes = [
       { path: 'details/:data', component: DetailsComponent,title:'Product Details' },
       { path: 'whishlist', component: WhishlistComponent,title:'Whish List' },
       { path: 'allorders', component: AllordersComponent,title:'All Orders' },
+<<<<<<< HEAD
       { path: 'userorders', component: UserOrderComponent,title:'User Orders' },
       { path: 'orders/:id', component: OrdersComponent,title:'Orders' },
       { path: '**', component: NotfoundComponent,title:'Error'},
     ]
+=======
+      { path: 'orders/:id', component: OrdersComponent,title:'Orders' },
+      { path: '**', component: NotfoundComponent,title:'Error'},
+    ],
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
   },
   { path: '**', component: NotfoundComponent,title:'Error'},
 ];

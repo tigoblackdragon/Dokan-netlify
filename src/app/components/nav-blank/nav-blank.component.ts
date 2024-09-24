@@ -15,9 +15,12 @@ export class NavBlankComponent implements OnInit {
   private readonly _CartService = inject(CartService)
 
   countNumber: number=0;
+<<<<<<< HEAD
   ordersNumber:number=0;
   ordersAdminNumber:number=0;
 
+=======
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
 
   ngOnInit(): void {
 
@@ -33,6 +36,7 @@ export class NavBlankComponent implements OnInit {
 this.countNumber=d;
       }
      })
+<<<<<<< HEAD
      this._CartService.cartOrders.subscribe({
       next:(e)=>{
 this.ordersNumber=e;
@@ -45,6 +49,8 @@ this.ordersAdminNumber=r;
     })
 
 
+=======
+>>>>>>> bf6c4b4b96c071104247df7842fc8acbb47f0703
     } 
 
   isLoggedout():void{
